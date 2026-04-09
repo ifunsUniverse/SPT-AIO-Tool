@@ -1,0 +1,35 @@
+We are continuing my SPT Config Editor project (Electron + React).
+
+Repo:
+https://github.com/YOURNAME/YOURREPO
+
+Current feature:
+- Guided tutorial system (TutorialProvider, TutorialOverlay, tutorialSteps)
+- Spotlight highlighting is implemented
+- Tutorial is action-based (user must click through steps)
+
+Current issues:
+1. Tutorial overlay darkens app too early (should only darken AFTER user clicks "Yes" on tutorial prompt)
+2. "SPT Detected" modal conflicts with tutorial flow — needs to be delayed and integrated properly
+3. Some highlight targets are not working yet (mod-item, file-item, etc.)
+
+Current state:
+- TutorialProvider, Overlay, and Home/Hub integration already done
+- Tutorial prompt modal working
+- Highlight system partially working
+
+What I need:
+- Help debugging + refining tutorial flow
+- Fix overlay timing and modal conflicts
+- Continue building highlight system (target accuracy, scrolling, locking steps)
+
+I will provide:
+- Relevant files only (not full project unless needed)
+- Error messages when they occur
+
+Start by reviewing TutorialOverlay.tsx and TutorialProvider.tsx and guide me step-by-step.
+
+Focus on:
+src/tutorial/
+src/pages/Home.tsx
+src/pages/Hub.tsx
