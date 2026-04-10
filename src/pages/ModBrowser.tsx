@@ -151,7 +151,7 @@ export default function ModBrowser({
                                             console.log("🖱 Install clicked:", mod.id);
 
                                             const apiKey = localStorage.getItem("forge_api_key");
-                                            const modsPath = localStorage.getItem("mods_path");
+                                            const modsPath = localStorage.getItem("spt-mods");
 
                                             if (!apiKey || !modsPath) return;
 
