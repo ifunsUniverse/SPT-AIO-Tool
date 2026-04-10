@@ -16,6 +16,7 @@ export default function Hub({
     const { nextStep, enabled } = useTutorial();
     const [showSPTModal, setShowSPTModal] = useState(false);
 
+
     useEffect(() => {
         const shouldShow = localStorage.getItem("show-spt-modal") === "true";
 
@@ -107,12 +108,8 @@ export default function Hub({
 
             {showSPTModal && (
                 <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70">
-
                     <div className="bg-background border border-border rounded-xl p-6 w-[420px] text-center">
-
-                        <h2 className="text-lg font-semibold mb-3">
-                            SPT Detected
-                        </h2>
+                        <h2 className="text-lg font-semibold mb-3">SPT Detected</h2>
 
                         <p className="text-sm text-muted-foreground mb-5">
                             Your SPT install is ready. You can now manage mods and configs.
@@ -124,12 +121,9 @@ export default function Hub({
                         >
                             Continue
                         </button>
-
                     </div>
-
                 </div>
             )}
-
         </div >
     );
 }

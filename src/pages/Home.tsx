@@ -112,10 +112,7 @@ export default function Home({ goToHub, setModal }: any) {
             localStorage.setItem("spt-launcher", result.launcherPath);
         }
 
-        setModal({
-            title: "SPT Loaded",
-            message: `Loaded existing SPT setup from ${result.root}`,
-        });
+        localStorage.setItem("show-spt-modal", "true");
 
         goToHub();
     };

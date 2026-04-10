@@ -12,10 +12,6 @@ type TutorialContextType = {
 
 const TutorialContext = createContext<TutorialContextType | null>(null);
 const [started, setStarted] = useState(false);
-const startTutorial = () => {
-    setStarted(true);
-    setCurrentStep(0);
-};
 
 export const useTutorial = () => {
     const ctx = useContext(TutorialContext);
