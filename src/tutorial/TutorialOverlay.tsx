@@ -10,6 +10,7 @@ export default function TutorialOverlay() {
 
     useEffect(() => {
         if (!current) return;
+        if (!started || currentStep === null) return null;
 
         const el = document.getElementById(current.target);
         if (!el) {

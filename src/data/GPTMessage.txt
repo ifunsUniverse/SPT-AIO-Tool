@@ -1,7 +1,7 @@
 We are continuing my SPT Config Editor project (Electron + React).
 
 Repo:
-https://github.com/YOURNAME/YOURREPO
+https://github.com/ifunsUniverse/SPT-AIO-Tool
 
 Current feature:
 - Guided tutorial system (TutorialProvider, TutorialOverlay, tutorialSteps)
